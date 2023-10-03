@@ -1,2 +1,2 @@
 #!/bin bash
-awk '{hosts[$1]++} END {for (host in hosts) print host, hosts[host]}' FS='\t' | sort -k2,2nr | head -n11
+tail -n +2 | cut -f1 | sort | uniq -c | sort -nr | head -11 | tr -s ' ' | cut -d' '
