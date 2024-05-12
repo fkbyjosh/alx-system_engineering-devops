@@ -1,0 +1,33 @@
+Have you ever wondered what happens behind the scenes when you type a URL like “https://www.google.com" into your browser and hit Enter? It may seem like magic, but in reality, there’s a series of intricate steps that occur to bring that webpage to your screen. Let’s dive into the journey your request takes through the internet’s infrastructure.
+
+DNS Request:
+The journey begins with a Domain Name System (DNS) request. Your browser needs to translate the human-readable domain name “www.google.com" into a numerical IP address that computers can understand. It sends a DNS query to a DNS server, which then looks up the IP address associated with “www.google.com" and returns it to your browser.
+
+TCP/IP:
+Armed with the IP address, your browser initiates a Transmission Control Protocol (TCP) connection to the server hosting Google’s website. TCP ensures that data packets are transmitted reliably and in order between your computer and the server. Internet Protocol (IP) handles the addressing and routing of these packets across the internet.
+
+Firewall:
+As your request travels through the internet, it may encounter firewalls — security measures designed to monitor and control incoming and outgoing network traffic. Firewalls help protect against unauthorized access and potential threats by inspecting data packets and enforcing security policies.
+
+HTTPS/SSL:
+When connecting to a secure website like Google, your browser uses HTTPS (Hypertext Transfer Protocol Secure) instead of HTTP. HTTPS encrypts the data exchanged between your browser and the server using SSL (Secure Sockets Layer) or its successor, TLS (Transport Layer Security). This encryption ensures that your communication with the website remains private and secure, protecting against eavesdropping and tampering.
+
+Load-Balancer:
+To handle the vast number of requests directed at popular websites like Google, load balancers distribute incoming traffic across multiple servers. Load balancing helps prevent any single server from becoming overwhelmed, ensuring optimal performance and reliability for users accessing the website.
+
+Web Server:
+Upon reaching Google’s servers, your request is processed by one of the many web servers in their infrastructure. These servers host the website’s static content, such as HTML, CSS, and JavaScript files. The web server retrieves the requested resources and sends them back to your browser over the established TCP connection.
+
+Application Server:
+In addition to serving static content, dynamic websites like Google Search rely on application servers to generate personalized and up-to-date content. These servers execute server-side code, interact with databases, and handle user requests that require dynamic processing. For example, when you perform a search query on Google, an application server processes your request and retrieves relevant search results.
+
+Database:
+Behind the scenes, databases store and manage the vast amount of data that powers dynamic websites like Google. When your request requires accessing or updating data, such as retrieving search results or saving user preferences, the application server communicates with the database server to perform these operations.
+
+In conclusion, the journey of a simple browser request involves multiple layers of infrastructure and technologies working seamlessly together to deliver the requested webpage to your screen. From DNS resolution to database queries, each step plays a crucial role in ensuring a smooth and secure browsing experience for users around the world. So, the next time you type a URL into your browser, take a moment to appreciate the intricate dance of data that occurs behind the scenes.
+
+
+
+
+
+
