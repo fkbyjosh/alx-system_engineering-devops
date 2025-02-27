@@ -13,10 +13,16 @@ v1.0.0 (by /u/firdaus_cartoon_jr)"
     params = {
         "limit": 10
     }
+    
     response = requests.get(url, headers=headers, params=params,
                             allow_redirects=False)
+    
     if response.status_code != 200:
         print(None)
         return
-    results = response.json().get("data")
-    [print(c.get("data").get("title")) for c in results.get("children")]
+    
+    try:
+        results = response.json().get("data")
+        [print(c.get("data").get("title")) for c in results.get("children")]
+    except:
+        print(None)
